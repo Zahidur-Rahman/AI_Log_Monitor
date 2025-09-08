@@ -1,3 +1,8 @@
-confluent-kafka==2.5.0
-sqlalchemy==2.0.35
-psycopg2-binary==2.9.9
+confluent-kafka
+sqlalchemy
+psycopg2-binary
+chromadb
+sentence-transformers==2.6.1
+pgvector
+torch==2.2.2+cpu
+numpy<2

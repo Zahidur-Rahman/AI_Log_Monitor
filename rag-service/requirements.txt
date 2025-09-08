@@ -1,0 +1,23 @@
+# For the web server
+fastapi
+uvicorn
+
+# Core AI and Agent libraries
+langchain
+langchain-community
+langchain-groq
+langgraph
+
+# For creating embeddings
+sentence-transformers
+numpy<2
+
+# For connecting to the vector database
+chromadb-client
+
+# For loading the .env file with your API key
+python-dotenv
+
+# For the SQL filtering endpoint
+sqlalchemy
+psycopg2-binary

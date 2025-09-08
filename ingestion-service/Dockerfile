@@ -1,6 +1,6 @@
 
 # Use an official Python runtime as a parent image
-FROM python:3.12.3-slim
+FROM python:3.11-slim
 
 # Set the working directory in the container
 WORKDIR /code
@@ -9,7 +9,7 @@ WORKDIR /code
 COPY ./requirements.txt /code/requirements.txt
 
 # Install any needed packages
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+RUN pip install uv && uv pip install --system --no-cache-dir --upgrade -r /code/requirements.txt
 
 # Copy the application code into the container
 COPY ./main.py /code/main.py
